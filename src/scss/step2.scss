@@ -1,0 +1,168 @@
+/* #banner__guide */
+
+#banner__guide {
+  padding: 75px 0;
+
+  .guide__box .guide__desc {
+    text-align: center;
+  }
+}
+
+/* .guide__desc */
+
+.guide__desc {
+  span {
+    background-color: #e01f1f;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 35px;
+    font-weight: normal;
+    margin: 15px 0 5px 0;
+
+    strong.bold {}
+  }
+
+  p {
+    color: #a0a0a0;
+    font-size: 14px;
+  }
+}
+
+/* guide__wrap */
+
+.guide__wrap {
+  display: flex;
+  margin-top: 35px;
+
+  .guide__left {
+    width: 49%;
+    margin-right: 2%;
+  }
+}
+
+/* .guide__left */
+
+.guide__left .left__top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left__top {
+  .guide__product {
+    width: 30%;
+    background-color: #e90505;
+    color: #fff;
+    text-align: center;
+    padding: 65px 0;
+    font-size: 23px;
+    box-sizing: border-box;
+  }
+
+  .guide__event {
+    position: relative;
+    width: 70%;
+
+    a img {
+      width: 100%;
+      height: 100%;
+    }
+
+    p {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 80%;
+      padding: 15px 0;
+      text-align: center;
+      color: #fff;
+      font-size: 17px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.guide__left .left__bottom {}
+
+.left__bottom ul {
+  display: flex;
+  align-items: baseline;
+
+  li {
+    position: relative;
+    margin-right: 2%;
+
+    &:last-child {
+      margin-right: 0%;
+    }
+
+    a {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px 0;
+      color: #fff;
+    }
+
+    img {}
+  }
+}
+
+/* .guide__right */
+
+.guide__wrap .guide__right {
+  width: 49%;
+  text-align: center;
+}
+
+.guide__right a {
+  position: relative;
+
+  img {
+    max-height: 404px;
+  }
+
+  span {
+    position: absolute;
+    left: 25px;
+    bottom: 80%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    color: #fff;
+    padding: 15px 0;
+  }
+}
+
+.guide__box .review__more {
+  text-align: center;
+
+  a {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    color: #dd0b0b;
+    font-size: 18px;
+    font-weight: bold;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #dd0b0b;
+    }
+  }
+}

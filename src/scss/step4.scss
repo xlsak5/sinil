@@ -1,0 +1,143 @@
+/* #banner__shinil */
+
+#banner__shinil {
+  padding: 75px 0;
+
+  .shinil__box {}
+}
+
+.shinil__desc {
+  text-align: center;
+  margin-bottom: 30px;
+
+  span {
+    background-color: #e01f1f;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 15px 0 5px 0;
+
+    strong.bold {}
+  }
+
+  p {
+    color: #a0a0a0;
+    font-size: 14px;
+  }
+}
+
+.shinil__list {
+  border: 1px solid #c8c8c8;
+  padding: 50px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+
+    li {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: -50%;
+        top: 0;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 100%;
+        background-color: #c8c8c8;
+      }
+
+      &:last-child::before {
+        display: none;
+      }
+
+      a {
+        img {
+          width: 55px;
+        }
+
+        span.strong {
+          display: block;
+          font-weight: bold;
+          margin: 20px 0 12px 0;
+        }
+
+        p {
+          color: #888686;
+        }
+      }
+    }
+  }
+}
+
+.shinil__customer {
+  margin-top: 30px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border: 1px solid #c8c8c8;
+    border-top: 2px solid #ff0000;
+    box-sizing: border-box;
+
+    li {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -40%;
+        top: 0;
+        transform: translateX(-40%);
+        width: 1px;
+        height: 100%;
+        background-color: #c8c8c8;
+      }
+
+      &:nth-child(2)::after, &:nth-child(3)::after {
+        display: none;
+      }
+
+      a {
+        p {
+          &.customer__strong {
+            font-weight: bold;
+            font-size: 20px;
+          }
+
+          &.company__call {
+            font-weight: bold;
+            font-size: 22px;
+            color: #ff0000;
+
+            strong {
+              color: #000;
+              font-size: 19px;
+            }
+          }
+        }
+
+        span {
+          &.desc1 {}
+
+          &.desc2 {
+            font-size: 13px;
+          }
+        }
+      }
+
+      img.call {}
+    }
+  }
+}
